@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+body {
+  all: unset;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+a {
+  all: unset;
+}
+
+header {
+  height: 100vh;
+  background-image: url("../assets/images/steve-johnson-YJGq5H9ofy0-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+}
+
+.glassmorph {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(5px) saturate(140%);
+  -webkit-backdrop-filter: blur(5px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+header .content {
+  color: var(--primary);
+  z-index: 2;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px) saturate(140%);
+  -webkit-backdrop-filter: blur(10px) saturate(140%);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.35);
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow:
+    0 6px 16px rgba(0, 0, 0, 0.3);
+}
